@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="imgContainer"><img src="Photo-0017.jpg" alt=""></div>
+
+        <div class="home menuBtn">Home</div>
+        <div class="portfolio menuBtn">Portfolio</div>
+        <div class="blog menuBtn">Blog</div>
+        <div class="contact menuBtn">Contact Me</div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1>My Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum temporibus, soluta</p>
+            <div class="btn" onclick="formAction()">Sign Up</div>
+            <din class="menuIcon" onclick="menuAction()">
+                <div class="menuLines">
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                </div>
+            </din>
+        </div>
+        <main>
+            <h3>What is this landing page about?</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, inventore asperiores optio cumque at
+                molestiae nobis, dignissimos aliquid maxime facilis ad quia consequatur distinctio, odit quod doloribus?
+                Distinctio, asperiores fugit?lo</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem soluta alias ipsum maxime, harum
+                aperiam
+                dolores quisquam voluptates nam sit omnis nostrum corrupti odit, hic iusto explicabo illo maiores!</p>
+            <h3>Tell Me More</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat cupiditate optio facere laboriosam?
+                Praesentium, ullam rem, iusto ex, cumque assumenda accusantium laudantium quis incidunt eaque veritatis
+                debitis aperiam itaque necessitatibus. Lorem</p>
+
+            <h3>Benefits</h3>
+            <li>Lifetime Access</li>
+            <li>30 Days Money Back</li>
+            <li>Tailored Customer Support</li>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, doloribus. Quaerat adipisci sed
+                assumenda
+                repellendus atque, ipsa consectetur nisi voluptatum sint. Dolores, quo recusandae? Nam corporis fugiat
+                velit
+                accusamus odit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, laboriosam. Sit nulla
+                perferendis nihil optio accusantium reiciendis ratione neque quisquam, facere veniam laudantium eum
+                veritatis, quas hic vel maiores et?</p>
+        </main>
+
+        <div class="formBack"></div>
+        <div class="form">
+            <div class="formContainer" id="formContainer">
+                <form id="form" novalidate>
+                    <h2>Register Whith Us</h2>
+                    <label for="userName">
+                        Username<br>
+                        <input type="text" minlength="3" maxlength="15" id="userName" placeholder="Enter username">
+                        <div id="notValidUsername" class="errorMessage" style="display: none;">Username must be at
+                            least
+                            3
+                            characters</div>
+                    </label>
+                    <label for="email">
+                        Email<br>
+                        <input type="email" id="email" placeholder="Enter email">
+                        <div id="notValidEmail" class="errorMessage" style="display: none;">Email is not valid</div>
+
+                    </label>
+                    <label for="password">
+                        Password<br>
+                        <input type="password" minlength="6" id="password" placeholder="Enter password">
+                        <div id="notValidPass" class="errorMessage" style="display: none;">Password must be at least
+                            6
+                            characters</div>
+
+                    </label>
+                    <label for="confirmPassword">
+                        Confirm Password<br>
+                        <input type="password" id="password2" placeholder="Enter password again">
+                        <div id="notValidPass2req" class="errorMessage" style="display: none;">Password2 is required
+                        </div>
+                        <div id="notValidPass2" class="errorMessage" style="display: none;">Password2 is Not same as
+                            password
+                        </div>
+
+                    </label>
+                    <!-- <button id="submit" onclick="checkValidation1()">submit</button> -->
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
